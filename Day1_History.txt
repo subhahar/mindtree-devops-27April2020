@@ -1,0 +1,654 @@
+    1  java -version 
+    2  mvn -version 
+    3  ansible --version 
+    4  docker status 
+    5  docker version 
+    6  exit
+    7  ls
+    8  cd devops-acc-2020April06/
+    9  ls
+   10  git pull 
+   11  ls
+   12  cat README.md 
+   13  ls
+   14  vim README.md 
+   15  git add . ; git commit -m "READme"; git push 
+   16  ls
+   17  git init 
+   18  ls -a 
+   19  git config --global --list 
+   20  git config --global user.name "Amit Vashist"
+   21  git config --global user.email "amitvashist7@outlook.com"
+   22  git config --global --list 
+   23  ls
+   24  vim README.md 
+   25  ls
+   26  cd devops-acc-2020April06/03-Docker/DockerCompose/3-tier-wordpress-app/
+   27  ls
+   28  mkdir logs/nginx -p 
+   29  mkdir db-data
+   30  ls
+   31  exit
+   32  docker-compose version 
+   33  git clone https://github.com/amitvashisttech/k8s-docker-vmware_15April2020.git
+   34  cd k8s-docker-vmware_15April2020/
+   35  ls
+   36  cd Docker/
+   37  ls
+   38  cd DockerCompose/
+   39  ls
+   40  cd apache/
+   41  ls
+   42  docker images 
+   43  ls
+   44  vim docker-compose.yaml 
+   45  ls
+   46  docker-compose up -d 
+   47  docker-compose ps 
+   48  docker ps 
+   49  docker-compose stop 
+   50  docker-compose rm
+   51  ls
+   52  cd ../
+   53  ls
+   54  cd wordpress/
+   55  ls
+   56  vim docker-compose.yaml 
+   57  ls
+   58  cat nginx/wordpress.conf 
+   59  ls
+   60  docker-compose up -d 
+   61  docker-compose ps 
+   62  ls
+   63  cd logs/
+   64  ls
+   65  cd nginx/
+   66  ls
+   67  tail -f hakase-access.log 
+   68  ls
+   69  cd ../../
+   70  ls
+   71  cd db-data/
+   72  ls
+   73  cd ..
+   74  ls
+   75  cd ..
+   76  ls
+   77  cd wordpress/
+   78  ls
+   79  docker-compose stop 
+   80  docker-compose rm
+   81  ls
+   82  cd ..
+   83  cd 
+   84  ls
+   85  git clone https://github.com/amitvashisttech/docker-k8s-ericsson.git
+   86  ls
+   87  cd k8s-docker-vmware_15April2020/
+   88  ls
+   89  mkdir K8s
+   90  cd K8s/
+   91  ls
+   92  cp -rf ../../docker-k8s-ericsson/K8s/01-Setup . 
+   93  ls
+   94  cd ..
+   95  ls
+   96  cd git add . ; git commit -m "K8s"; git push 
+   97  git status 
+   98  ls
+   99  git add . 
+  100  ls
+  101  cd Docker/
+  102  ls
+  103  cd Docker
+  104  cd DockerCompose/
+  105  ls
+  106  cd wordpress/
+  107  ls
+  108  rm -rf db-data logs/ nginx/ wordpress/
+  109  ls
+  110  cd ../../
+  111  ls
+  112  cd ..
+  113  ls
+  114  cd K8s/
+  115  ls
+  116  cd 01-Setup/
+  117  ls
+  118  rm -rf etcd.sh 
+  119  ls
+  120  cd ../../
+  121  ls
+  122  git add . 
+  123  git status 
+  124  git commit -m "K8s"
+  125  git push 
+  126  ls
+  127  cd K8s/
+  128  ls
+  129  git pull 
+  130  ls
+  131  cp -rf ../../docker-k8s-ericsson/K8s/02-First-App . 
+  132  ls
+  133  git add . ; git commit -m "02-First-App"; git push 
+  134  ls
+  135  git pull 
+  136  ls
+  137  cd ..
+  138  ls
+  139  cd K8s/
+  140  ls
+  141  cp -rf ../../docker-k8s-ericsson/K8s/03-Replication-controller . 
+  142  git add . ; git commit -m "RC"; git push 
+  143  cp -rf ../../docker-k8s-ericsson/K8s/04-Deployment . 
+  144  git add . ; git commit -m "RC"; git push 
+  145  git pull 
+  146  ls
+  147  git add . ; git commit -m "RC"; git push 
+  148  ls
+  149  git pull 
+  150  ls
+  151  cd ..
+  152  ls
+  153  cd K8s/
+  154  ls
+  155  cd ..
+  156  ls
+  157  cd 
+  158  ls
+  159  cd docker-k8s-ericsson/
+  160  ls
+  161  cd K8s/
+  162  ls
+  163  cd 
+  164  ls
+  165  cd - 
+  166  ls
+  167  cd 05-Wordpress/
+  168  ls
+  169  cat wordpress-single-deployment-no-volumes.yml 
+  170  ls
+  171  cd ..
+  172  l
+  173  s
+  174  ls
+  175  cd ..
+  176  ls
+  177  cd ..
+  178  ls
+  179  cd kubernetes-project/
+  180  ls
+  181  ls -ltr 
+  182  cd deployment/
+  183  ls
+  184  cd ..
+  185  ls
+  186  cd ..
+  187  ls
+  188  cd k8s-docker-vmware_15April2020/
+  189  ls
+  190  cd K8s/
+  191  ls
+  192  git pull 
+  193  mkdir 09-Secrets
+  194  cd 09-Secrets/
+  195  ls
+  196  cd ..
+  197  ls
+  198  cd 04-Deployment/
+  199  ls
+  200  mv helloworld-secrets.yml ../09-Secrets/
+  201  mv helloworld-secrets-volumes.yml ../09-Secrets/
+  202  ls
+  203  cd ..
+  204  ls
+  205  git add . ; git commit -m "09-Secrets"; git push 
+  206  ls
+  207  cd ..
+  208  ls
+  209  cd ..
+  210  ls
+  211  cd docker-k8s-ericsson/
+  212  ls
+  213  cd K8s/
+  214  ls
+  215  cd 05-Wordpress/
+  216  ls
+  217  cat wordpress-single-deployment-no-volumes.yml 
+  218  ls
+  219  cd ..
+  220  ls
+  221  cd 06-Service-discovery/
+  222  ls
+  223  cat helloworld-db.yml 
+  224  ls
+  225  cd ..
+  226  ls
+  227  cd ../../
+  228  ls
+  229  cd k8s-docker-vmware_15April2020/
+  230  ls
+  231  cd K8s/
+  232  ls
+  233  cp -rf ../../docker-k8s-ericsson/K8s/05-Wordpress 10-Wordpress
+  234  ls
+  235  git add . ; git commit -m "10-Wordpress"; git push 
+  236  ls
+  237  cd ..
+  238  ls
+  239  cd 
+  240  ls
+  241  cd terraform-project/50-DevOps-Aws-Provisiong/
+  242  ls
+  243  cd Kuberneties/
+  244  ls
+  245  terraform-11 show 
+  246  terraform-11 destroy 
+  247  source /root/.bashrc 
+  248  terraform-11 destroy 
+  249  ls
+  250  ls
+  251  cd terraform-project/
+  252  ls
+  253  cd 50-DevOps-Aws-Provisiong/
+  254  ls
+  255  cd Kuberneties/
+  256  ls
+  257  cat labuser-21.tf 
+  258  ls
+  259  for i in {01..21}; do cat sample-1 |sed "s/labuserxy/labuser$i/g" > labuser.tf; done
+  260  cat labuser.tf 
+  261  for i in {01..21}; do cat sample-1 |sed "s/labuserxy/labuser$i/g" >> labuser.tf; done
+  262  cat labuser.tf 
+  263  ls
+  264  mv labuser-21.tf labuser-21.tf.old
+  265  ls
+  266  vim variables.tf 
+  267  ls
+  268  terraform-11 apply 
+  269  rm -rf labuser.tf 
+  270  for i in {01..21}; do cat sample-1 |sed "s/labuserxy/labuser$i/g" >> labuser.tf; done
+  271  terraform-11 apply 
+  272  export AWS_ACCESS_KEY_ID="AKIA2RLIAWXT2RU6LTM2"
+  273  export AWS_SECRET_ACCESS_KEY="UJJwjoAfruudhiHF9Ngt6NENZjCbe3o8+O/J3O+H"
+  274  terraform-11 apply 
+  275  history | grep -i export
+  276  cd 
+  277  vi .bashrc 
+  278  ls
+  279  cd k8s-docker-vmware_15April2020/
+  280  ls
+  281  cd K8s/
+  282  ls
+  283  cd 
+  284  ls
+  285  cd docker-k8s-ericsson/
+  286  ls
+  287  cd K8s/
+  288  ls
+  289  cd ..
+  290  l
+  291  cd ..
+  292  ls
+  293  cd kubernetes-project/
+  294  ls
+  295  cd dashboard/
+  296  ls
+  297  l
+  298  cat sample-user.yaml 
+  299  ls
+  300  cd 
+  301  ls
+  302  cd terraform-project/
+  303  ls
+  304  cd 50-DevOps-Aws-Provisiong/
+  305  ls
+  306  cd Kuberneties/
+  307  ls
+  308  terraform-11 show output
+  309  terraform-11 show 
+  310  ls
+  311  terraform-11 show 
+  312  terraform-11 refresh
+  313  ls
+  314  terraform-11 show
+  315  ls
+  316  cd 
+  317  ls
+  318  cd docker-k8s-ericsson/
+  319  ls
+  320  cd K8s/
+  321  ls
+  322  cd ..
+  323  ls
+  324  cd ..
+  325  ls
+  326  cd k8s-docker-vmware_15April2020/
+  327  ls
+  328  cd K8s/
+  329  ls
+  330  git pull 
+  331  ls
+  332  cd 02-First-App/
+  333  ls
+  334  rm -rf helloworld-av.yaml helloworld-nodeport-service.yml helloworld-service.yml 
+  335  ls 
+  336  cat helloworld.yml 
+  337  ls
+  338  cd ..
+  339  ls
+  340  cp -rf 07-Labels
+  341  mkdir 07-Labels
+  342  ls
+  343  cd 04-Deployment/
+  344  ls
+  345  mv helloworld-nodeselector.yml ../07-Labels/
+  346  ls
+  347  cd ..
+  348  ls
+  349  git add . ; git commit -m "07-Labels"
+  350  git push 
+  351  ls
+  352  mkdir 08-HealthCheck
+  353  ls
+  354  cd 04-Deployment/
+  355  ls
+  356  mv helloworld-healthcheck.yml ../08-HealthCheck/
+  357  ls
+  358  cd ..
+  359  ls
+  360  git add . ; git commit -m "08-HealthCheck"
+  361  git push 
+  362  git pull 
+  363  history |  grep -i taint
+  364  ls
+  365  git add . ; git commit -m "08-HealthCheck"; git push 
+  366  ls
+  367  cd ..
+  368  ls
+  369  cd ..
+  370  ls
+  371  cd kubernetes-project/
+  372  ls
+  373  cd nfs-persistent-volume/
+  374  ls
+  375  ls -ltr 
+  376  cat nfs-pv.yaml 
+  377  ls
+  378  cat nfs-busybox-rc.yaml 
+  379  ls
+  380  cat fs-web-rc.yaml 
+  381  ls
+  382  cd ..
+  383  ls
+  384  cd ..
+  385  ls
+  386  cd k8s-docker-vmware_15April2020/
+  387  ls
+  388  cd K8s/
+  389  ls
+  390  cp -rf ../../kubernetes-project/configmap 11-ConfigMap
+  391  ls
+  392  git add . ; git commit -m "08-HealthCheck"; git push 
+  393  git pull 
+  394  git add . ; git commit -m "08-HealthCheck"; git push 
+  395  git pull 
+  396  ls
+  397  cp -rf ../../kubernetes-project/statefullset . 
+  398  ls
+  399  mv statefullset 12-Statefullset
+  400  ls
+  401  cd 12-Statefullset/
+  402  ls
+  403  cat cassandra.yaml 
+  404  ls
+  405  cat helloworld-stateful.yaml 
+  406  ls
+  407  rm -rf cassandra.yaml 
+  408  ls
+  409  cd ..
+  410  ls
+  411  cp -rf ../../kubernetes-project/deamonset . 
+  412  ls
+  413  cat deamonset/
+  414  ls
+  415  cd deamonset/
+  416  ls
+  417  cat helloworld.yml 
+  418  ls
+  419  cd ..
+  420  ls
+  421  mv deamonset 13-DeamonSet
+  422  ls
+  423  git add . ; git commit -m "12-Statefullset"; git push 
+  424  ls
+  425  cp -rf ../../docker-k8s-ericsson/K8s/07-Autoscaling . 
+  426  ls
+  427  mv 07-Autoscaling 14-Autoscaling
+  428  ls
+  429  git pull 
+  430  git add . ; git commit -m "14-Autoscaling"; git push 
+  431  ls
+  432  cd ..
+  433  ls
+  434  cd kubernetes-project/
+  435  ls
+  436  autoscaling/
+  437  ls
+  438  cd autoscaling/
+  439  ls
+  440  cat hpa-example.yml 
+  441  ls
+  442  cd ..
+  443  ls
+  444  cd metrics-server/
+  445  ls
+  446  cd ..
+  447  ls
+  448  cd ..
+  449  ls
+  450  cd k8s-docker-vmware_15April2020/
+  451  ls
+  452  cd K8s/
+  453  ls
+  454  cp -rf ../../kubernetes-project/metrics-server . 
+  455  ls
+  456  cd ..
+  457  ls
+  458  git config --list 
+  459  ls
+  460  git add . ; git commit -m "Metric"
+  461  git push 
+  462  ls
+  463  cd ..
+  464  ls
+  465  cd docker-k8s-ericsson/
+  466  ls
+  467  cd K8s/
+  468  ls
+  469  cd ..
+  470  ls
+  471  cd ..
+  472  ls
+  473  cd k8s-docker-vmware_15April2020/
+  474  ls
+  475  cd K8s/
+  476  ls
+  477  git pull 
+  478  ls
+  479  cp -rf ../../docker-k8s-ericsson/K8s/08-Statefullset . 
+  480  cp -rf ../../kubernetes-project/nfs-persistent-volume . 
+  481  ls
+  482  mv 08-Statefullset 16-Statefullset-Cass
+  483  mv nfs-persistent-volume 17-nfs-persistent-volume
+  484  ls
+  485  git add . ; git commit -m "Metric"
+  486  git push 
+  487  ls
+  488  mkdir mindtree
+  489  ls
+  490  cd mindtree/
+  491  ls
+  492  git clone https://github.com/amitvashisttech/mindtree-devops-27April2020.git
+  493  ls
+  494  cd mindtree-devops-27April2020/
+  495  ls
+  496  cat README.md 
+  497  ls
+  498  cat README.md 
+  499  git --version 
+  500  ls
+  501  vim Vagrantfile
+  502  ls
+  503  git config --global --list 
+  504  git config --global user.name "AmitVashist"
+  505  git config --global user.email "amitvashist7@outlook.com"
+  506  git config --global --list 
+  507  git config --global user.email "amitvashist7@gmail.com"
+  508  git config --global --list 
+  509  ls
+  510  git status 
+  511  git add Vagrantfile 
+  512  git status 
+  513  git commit 
+  514  git config --global core.editor vi
+  515  git config --global --list 
+  516  git commit 
+  517  ls
+  518  git status 
+  519  git push 
+  520  ls
+  521  echo "Apple Pie"| git hash-object --stdin 
+  522  echo "Amit"| git hash-object --stdin 
+  523  echo "Apple Pie"| git hash-object --stdin -w
+  524  ls
+  525  ls -a 
+  526  cd ..
+  527  ls
+  528  mkdir myrepo 
+  529  ls
+  530  cd myrepo/
+  531  ls
+  532  ls -a 
+  533  git init . 
+  534  ls -a 
+  535  cd ../
+  536  ls
+  537  cd mindtree-devops-27April2020/
+  538  ls
+  539  echo "Apple Pie"| git hash-object --stdin -w
+  540  ls -a .git/objects/
+  541  git cat-file .git/objects/23/991897e13e47ed0adb91a0082c31c82fe0cbe5 
+  542  git cat-file .git/objects/23/991897e13e47ed0adb91a0082c31c82fe0cbe5 -p 
+  543  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -p 
+  544  ls
+  545  cd .git/
+  546  ls
+  547  cd branches/
+  548  ls
+  549  ls -al 
+  550  ls -a 
+  551  ls
+  552  cd ..
+  553  ls
+  554  cd ..
+  555  ls
+  556  git logs 
+  557  git log
+  558  ls
+  559  echo "Hello World" >> Helloworld.txt
+  560  cat Helloworld.txt 
+  561  git add . ; git commit -m "File added Helloworld"
+  562  ls
+  563  git status 
+  564  git push 
+  565  git log
+  566  echo "Welcome to the world of Git" >> Helloworld.txt
+  567  git add . ; git commit -m "Modified Helloworld"
+  568  git log 
+  569  git diff 2abf24..b6e813
+  570  ls
+  571  diff Helloworld.txt Vagrantfile 
+  572  ls
+  573  cat Helloworld.txt 
+  574  echo "Welcome to the world of Git" > Helloworld.txt
+  575  cat Helloworld.txt 
+  576  git add . ; git commit -m "Modified Helloworld"
+  577  git diff HEAD~1
+  578  git diff HEAD~2
+  579  git diff HEAD~1..HEAD~2
+  580  git diff HEAD~1..HEAD~2..HEAD~3
+  581  git diff HEAD~1..HEAD~2
+  582  ls
+  583  mv Helloworld.txt Hello.txt 
+  584  git add . 
+  585  git status 
+  586  rm Hello.txt 
+  587  git status 
+  588  echo "Welcome to the world of Git" > Helloworld.txt
+  589  git status 
+  590  git add . 
+  591  ls
+  592  git show HEAD 
+  593  git log 
+  594  vi Helloworld.txt 
+  595  git add . ; git commit -m "AV"
+  596  git show HEAD 
+  597  git showlog 
+  598  git branch 
+  599  ls
+  600  cd .git/
+  601  ls
+  602  cd refs/
+  603  ls
+  604  cd heads/
+  605  ls
+  606  cat master 
+  607  git log 
+  608  ls
+  609  cd ../../
+  610  cd ..
+  611  echo "Welcome to the world of Git" > Helloworld.txt
+  612  git add . ; git commit -m "AV Removed"
+  613  cat .git/refs/heads/master 
+  614  git log 
+  615  ls
+  616  git branch 
+  617  git branch testing
+  618  git branch 
+  619  git branch production 
+  620  ls
+  621  git branch 
+  622  ls -ltr 
+  623  git log 
+  624  git branch 
+  625  git checkout testing
+  626  git branch 
+  627  cat .git/refs/heads/testing 
+  628  ls
+  629  echo "Welcome to Testing Branch" > Testing_Branch.txt
+  630  git status 
+  631  git add . ; git commit -m "Testing File"
+  632  git status 
+  633  cat .git/refs/heads/testing 
+  634  git log 
+  635  ls
+  636  git branch 
+  637  git checkout production 
+  638  ls 
+  639  git log 
+  640  echo "Welcome to Production Branch" > Production_Branch.txt
+  641  git add . ; git commit -m "Prod File"
+  642  git show head
+  643  git show HEAD
+  644  git push 
+  645  git push --set-upstream origin production
+  646  ls
+  647  git checkout testing 
+  648  ls
+  649  git push 
+  650  git push --set-upstream origin testing
+  651  ls
+  652  git checkout master 
+  653  ls
+  654  history > Day1_History.txt

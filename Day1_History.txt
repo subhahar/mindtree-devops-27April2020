@@ -165,3 +165,151 @@
   652  git checkout master 
   653  ls
   654  history > Day1_History.txt
+    1  vim Day1_History.txt 
+    2  git add . ; git commit -m "Updated History"; git push 
+    3  ls
+    4  cd 
+    5  ls
+    6  cd terraform-
+    7  cd terraform-project/
+    8  ls
+    9  mkdir Amazone-Cloud
+   10  mkidr Google-Cloud
+   11  mkdir Google-Cloud
+   12  mkdir Openstack-OnPrimCloud
+   13  ls
+   14  mv *-* Amazone-Cloud/
+   15  ls
+   16  mv Amazone-Cloud/Google-Cloud . 
+   17  mv Amazone-Cloud/Openstack-OnPrimCloud . 
+   18  ls
+   19  cd Amazone-Cloud/
+   20  ls
+   21  c d..
+   22  lcd ..
+   23  ls
+   24  cd ..
+   25  ls
+   26  mkidr DevOps-Lab
+   27  mkdir DevOps-Lab
+   28  ls
+   29  mv Amazone-Cloud/50-DevOps-Aws-Provisiong DevOps-Lab/
+   30  ls
+   31  mv Amazone-Cloud/31-RnD-Openstack Openstack-OnPrimCloud/
+   32  ls
+   33  cd ..
+   34  ls
+   35  cd terraform-hpe-31March2020/
+   36  ls
+   37  cd ..
+   38  ls
+   39  cp -rf terraform-hpe-31March2020/* terraform-project/Google-Cloud/
+   40  ls
+   41  cd ..
+   42  cd 
+   43  cd terraform-project/
+   44  ls
+   45  cd Google-Cloud/
+   46  ls
+   47  cd 01-Setup-Terrafrom/
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd 12-Modules/
+   52  ls
+   53  cd ..
+   54  ls
+   55  cd ..
+   56  du -sh * 
+   57  cd DevOps-Lab/
+   58  ls
+   59  cd 50-DevOps-Aws-Provisiong/
+   60  ls
+   61  du -sh * 
+   62  cd Kuberneties/
+   63  ls
+   64  du -sh * 
+   65  rm -rf .terraform terraform.tfstate* 
+   66  ls
+   67  cd ..
+   68  ls
+   69  cd ..
+   70  ls
+   71  du -sh * 
+   72  cd ..
+   73  ls
+   74  du -sh * 
+   75  cd Amazone-Cloud/
+   76  s
+   77  ls
+   78  du -sh * 
+   79  ls
+   80  cd ..
+   81  ls
+   82  git add . ; git commit -m "Terrafrom-AWS,GCP,K8s,Openstack"
+   83  git push 
+   84  ls
+   85  cd ..
+   86  ls
+   87  cd mindtree/
+   88  ls
+   89  cd mindtree-devops-27April2020/
+   90  ls
+   91  git branch 
+   92  git checkout testing 
+   93  ls
+   94  echo "Test 2" > Testing_Branch.txt 
+   95  git add . ; git commit -m "Test 2"; git push 
+   96  ls
+   97  git checkout production 
+   98  git merge testing
+   99  ls -ltr 
+  100  git branch 
+  101  cat Testing_Branch.txt 
+  102  vim README.md 
+  103  git add . ; git commit -m "Readme.txt"
+  104  git checkout master 
+  105  ls
+  106  ls -ltr 
+  107  cat README.md 
+  108  git merge production 
+  109  git merge production -m "Merge Prod into Master Branch"
+  110  ls 
+  111  cat README.md 
+  112  git log 
+  113  ls
+  114  git push 
+  115  git pull 
+  116  git push 
+  117  git pull 
+  118  git add . 
+  119  git status 
+  120  git commit -m "README.md"; git push 
+  121  ls
+  122  cat README.md 
+  123  ls
+  124  cd ls
+  125  ls
+  126  git log 
+  127  ls
+  128  git branch 
+  129  git tag release_2020_04_17-v1
+  130  git tag
+  131  cat .git/refs/tags/release_2020_04_17-v1 
+  132  git log 
+  133  git push --tags 
+  134* 
+  135  vim README.md 
+  136  ls
+  137  git add . ; git commit -m "README-Update" ; git push 
+  138  ls
+  139  git log 
+  140  cat .git/refs/heads/master 
+  141  cat .git/refs/tags/release_2020_04_17-v1 
+  142  git tag
+  143  git tag release_2020_04_17-v1-hotfix
+  144  git tag
+  145  git push 
+  146  git push --tags
+  147  ls
+  148  history >> Day1_History.txt 
